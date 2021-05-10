@@ -4,14 +4,15 @@
 
 #**********************************************************
 #Atencao: Alterar Diretorio
-setwd("C:/aula")
+#setwd("C:/aula")
+setwd("C:/Workspaces/RStudio/cluster-analyses")
 
 #Retirar notacao cientifica no R
 options(scipen = 999)
 
 #Instalacao de pacotes para leitura de banco de dados do Excel
 
-install.packages("readxl")
+#install.packages("readxl")
 
 
 #**********************************************************
@@ -24,7 +25,7 @@ install.packages("readxl")
 #Leitura da Base de Consumo de Alimentos
 
 library(readxl)
-consumo <- read_excel("Consumo_Alimentos.xlsx", sheet = 'Base de Dados')
+consumo <- read_excel("C:/Workspaces/RStudio/cluster-analyses/Bases-de-Dados-e-Scripts/Consumo_Alimentos.xlsx", sheet = 'Base de Dados')
 nrow(consumo)
 ncol(consumo)
 #**********************************************************
